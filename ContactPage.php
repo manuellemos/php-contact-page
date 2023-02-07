@@ -18,6 +18,11 @@ class ContactPage
   private $contactWhatsApp = '';
   private $icons = array();
   private $texts = array();
+  private $positions = array(
+	'WhatsApp',
+	'FacebookMessenger',
+	'Email'
+  );
 
   private function getIcon($icon, $alt)
   {
@@ -70,20 +75,31 @@ class ContactPage
   public function output()
   {
 	$contact = '<div style="position: fixed; bottom: 20px; right: 32px;">';
-	if($this->contactEmailAddress !== '')
+	foreach($this->positions as $position)
 	{
-		$message = $this->getText('Contact-us-using-email');
-		$contact .= '<div style="background-color: #000000; border-radius: 8px; padding: 7px 4px 9px 8px; margin: 4px; border-width: 1px; border-color: #000000; border-style: solid; width: 28px"><a target="_blank" href="mailto:'.$this->contactEmailAddress.'" title="'.HtmlSpecialChars($message).'">'.$this->getIcon('mail', $message).'</a></div>';
-	}
-	if($this->contactFacebookMessenger !== '')
-	{
-		$message = $this->getText('Contact-us-using-Messenger');
-		$contact .= '<div style="background-color: #ffffff; border-radius: 8px; padding: 1px 4px 0px 3px; margin: 4px; border-width: 1px; border-color: #000000; border-style: solid; width: 33px"><a target="_blank" href="https://m.me/'.$this->contactFacebookMessenger.'" title="'.htmlspecialchars($message).'">'.$this->getIcon('FacebookMessenger', $message).'</a></div>';
-	}
-	if($this->contactWhatsApp !== '')
-	{
-		$message = LocaleText('Contact-us-using-WhatsApp');
-		$contact .= '<div style="background-color: #25d366; border-radius: 8px; padding: 3px 4px 1px 4px; margin: 4px; border-width: 1px; border-color: #000000; border-style: solid; width: 32px"><a target="_blank" href="https://api.whatsapp.com/send?phone='.$this->contactWhatsApp.'&text='.UrlEncode(str_replace('{site}', $this->system_name, LocaleText('Hello-I-visited-your-site-and-I-need-your-help'))).'" title="'.$message.'">'.$this->getIcon('WhatsApp', $message).'</a></div>';
+		switch($position)
+		{
+			case 'Email':
+				if($this->contactEmailAddress !== '')
+				{
+					$message = $this->getText('Contact-us-using-email');
+					$contact .= '<div style="background-color: #000000; border-radius: 8px; padding: 7px 4px 9px 8px; margin: 4px; border-width: 1px; border-color: #000000; border-style: solid; width: 28px"><a target="_blank" href="mailto:'.$this->contactEmailAddress.'" title="'.HtmlSpecialChars($message).'">'.$this->getIcon('mail', $message).'</a></div>';
+				}
+				break;
+			case 'FacebookMessenger':
+				if($this->contactFacebookMessenger !== '')
+				{
+					$message = $this->getText('Contact-us-using-Messenger');
+					$contact .= '<div style="background-color: #ffffff; border-radius: 8px; padding: 1px 4px 0px 3px; margin: 4px; border-width: 1px; border-color: #000000; border-style: solid; width: 33px"><a target="_blank" href="https://m.me/'.$this->contactFacebookMessenger.'" title="'.htmlspecialchars($message).'">'.$this->getIcon('FacebookMessenger', $message).'</a></div>';
+				}
+				break;
+			case 'WhatsApp':
+				if($this->contactWhatsApp !== '')
+				{
+					$message = LocaleText('Contact-us-using-WhatsApp');
+					$contact .= '<div style="background-color: #25d366; border-radius: 8px; padding: 3px 4px 1px 4px; margin: 4px; border-width: 1px; border-color: #000000; border-style: solid; width: 32px"><a target="_blank" href="https://api.whatsapp.com/send?phone='.$this->contactWhatsApp.'&text='.UrlEncode(str_replace('{site}', $this->system_name, LocaleText('Hello-I-visited-your-site-and-I-need-your-help'))).'" title="'.$message.'">'.$this->getIcon('WhatsApp', $message).'</a></div>';
+				}
+		}
 	}
 	$contact .= '</div>';
 	return $contact;
