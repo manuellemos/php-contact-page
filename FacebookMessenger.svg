@@ -1,0 +1,29 @@
+<!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+<!-- Created with Inkscape (http://www.inkscape.org/) based on the original provided with permission by WhatsApp (https://www.facebook.com/brand/resources/messenger/logo) -->
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="35.84" height="35.84" viewBox="0 0 35.84 35.84" version="1.1" id="svg22" sodipodi:docname="logo.svg" inkscape:version="0.92.2 5c3e80d, 2017-08-06">
+  <metadata id="metadata26">
+    <rdf:rdf>
+      <cc:work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+      </cc:work>
+    </rdf:rdf>
+  </metadata>
+  <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1920" inkscape:window-height="993" id="namedview24" showgrid="false" inkscape:zoom="0.74362183" inkscape:cx="-718.6531" inkscape:cy="-73.162608" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="svg22"></sodipodi:namedview>
+  <title id="title2">Contact us using Messenger</title>
+  <defs id="defs13">
+    <radialGradient cx="265.97925" cy="917.72095" fx="265.97925" fy="917.72095" r="871.6759" id="radialGradient-1" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0099FF" offset="0%" id="stop4"></stop>
+      <stop stop-color="#A033FF" offset="60.9753877%" id="stop6"></stop>
+      <stop stop-color="#FF5280" offset="93.482299%" id="stop8"></stop>
+      <stop stop-color="#FF7061" offset="100%" id="stop10"></stop>
+    </radialGradient>
+  </defs>
+  <g id="g20" style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1" transform="scale(0.035)">
+    <rect id="bounding-box" x="0" y="0" width="1024" height="1024" style="fill:#ffffff;fill-opacity:0"></rect>
+    <g id="logo">
+      <path d="m 512,122 c -225.332,0 -400,165.056 -400,388 0,116.6144 47.792,217.3824 125.6224,286.984 6.5336,5.848 10.4776,14.04 10.7456,22.808 l 2.1784,71.152 c 0.696,22.696 24.1392,37.464 44.9072,28.296 l 79.3944,-35.048 c 6.7304,-2.968 14.272,-3.52 21.364,-1.568 C 432.696,892.656 471.5264,898 512,898 737.332,898 912,732.944 912,510 912,287.056 737.332,122 512,122 Z" id="Path" inkscape:connector-curvature="0" style="fill:url(#radialGradient-1)"></path>
+      <path d="m 271.8016,623.4688 117.5,-186.416 c 18.6904,-29.656 58.7144,-37.04 86.7584,-16.008 l 93.4536,70.0904 c 8.5744,6.432 20.372,6.3976 28.9104,-0.0824 l 126.2136,-95.788 c 16.8464,-12.784 38.836,7.376 27.5624,25.2664 L 634.7,606.9488 c -18.692,29.6544 -58.716,37.04 -86.7584,16.0064 l -93.456,-70.092 c -8.5736,-6.4304 -20.372,-6.396 -28.9096,0.084 l -126.2144,95.788 c -16.8456,12.7832 -38.836,-7.3768 -27.56,-25.2664 z" id="path17" inkscape:connector-curvature="0" style="fill:#ffffff"></path>
+    </g>
+  </g>
+</svg>
