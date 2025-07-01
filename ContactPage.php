@@ -84,21 +84,21 @@ class ContactPage
 				if($this->contactEmailAddress !== '')
 				{
 					$message = $this->getText('Contact-us-using-email');
-					$contact .= '<div style="background-color: #000000; border-radius: 8px; padding: 7px 4px 9px 8px; margin: 4px; border-width: 1px; border-color: #000000; border-style: solid; width: 28px"><a target="_blank" href="mailto:'.$this->contactEmailAddress.'" title="'.HtmlSpecialChars($message).'">'.$this->getIcon('mail', $message).'</a></div>';
+					$contact .= '<div style="background-color: #000000; border-radius: 8px; padding: 5px 4px 5px 5px; margin: 4px; border-width: 1px; border-color: #000000; border-style: solid; width: 37px"><a target="_blank" href="mailto:'.$this->contactEmailAddress.'" title="'.HtmlSpecialChars($message).'">'.$this->getIcon('mail', $message).'</a></div>';
 				}
 				break;
 			case 'FacebookMessenger':
 				if($this->contactFacebookMessenger !== '')
 				{
 					$message = $this->getText('Contact-us-using-Messenger');
-					$contact .= '<div style="background-color: #ffffff; border-radius: 8px; padding: 1px 4px 0px 3px; margin: 4px; border-width: 1px; border-color: #000000; border-style: solid; width: 33px"><a target="_blank" href="https://m.me/'.$this->contactFacebookMessenger.'" title="'.htmlspecialchars($message).'">'.$this->getIcon('FacebookMessenger', $message).'</a></div>';
+					$contact .= '<div style="background-color: #ffffff; border-radius: 8px; padding: 4px 4px 4px 5px; margin: 4px; border-width: 1px; border-color: #000000; border-style: solid; width: 37px"><a target="_blank" href="https://m.me/'.$this->contactFacebookMessenger.'" title="'.htmlspecialchars($message).'">'.$this->getIcon('FacebookMessenger', $message).'</a></div>';
 				}
 				break;
 			case 'WhatsApp':
 				if($this->contactWhatsApp !== '')
 				{
-					$message = LocaleText('Contact-us-using-WhatsApp');
-					$contact .= '<div style="background-color: #25d366; border-radius: 8px; padding: 3px 4px 1px 4px; margin: 4px; border-width: 1px; border-color: #000000; border-style: solid; width: 32px"><a target="_blank" href="https://api.whatsapp.com/send?phone='.$this->contactWhatsApp.'&text='.UrlEncode(str_replace('{site}', $this->system_name, LocaleText('Hello-I-visited-your-site-and-I-need-your-help'))).'" title="'.$message.'">'.$this->getIcon('WhatsApp', $message).'</a></div>';
+					$message = $this->getText('Contact-us-using-WhatsApp');
+					$contact .= '<div style="background-color: #25d366; border-radius: 8px; padding: 7px 3px 4px 6px; margin: 4px; border-width: 1px; border-color: #000000; border-style: solid; width: 37px"><a target="_blank" href="https://api.whatsapp.com/send?phone='.$this->contactWhatsApp.'&text='.UrlEncode(str_replace('{site}', $this->system_name, $this->getText('Hello-I-visited-your-site-and-I-need-your-help'))).'" title="'.$message.'">'.$this->getIcon('WhatsApp', $message).'</a></div>';
 				}
 				break;
 		}
